@@ -1,0 +1,77 @@
+/*
+   Handles page layout, fonts, and canvas presentation. */
+
+/* Page background and centering */
+body {
+margin: 0;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #f0e6ff;
+font-family: Georgia, serif;
+}
+
+/* Wrapper that holds everything */
+.game-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+/* Game title */
+h1 {
+font-size: 28px;
+font-weight: normal;
+color: #6b3fa0;
+margin: 0 0 4px;
+letter-spacing: 0.5px;
+}
+
+/* Score / Missed / Level row */
+.score-row {
+display: flex;
+gap: 28px;
+font-size: 15px;
+color: #8a6aaa;
+}
+
+.score-row span {
+font-weight: bold;
+color: #4a2a7a;
+}
+
+/* The game canvas */
+#gameCanvas {
+border-radius: 18px;
+border: 2px solid #d4b8f0;
+cursor: crosshair;
+display: block;
+background: #faf5ff;
+}
+
+/* Hint text below canvas */
+.hint {
+font-size: 13px;
+color: #9b7ec8;
+margin: 0;
+}
+
+/* Restart button */
+#restartBtn {
+margin-top: 4px;
+padding: 8px 26px;
+border-radius: 20px;
+border: 1.5px solid #c8a0e8;
+background: transparent;
+color: #6b3fa0;
+font-size: 14px;
+font-family: Georgia, serif;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+#restartBtn:hover {
+background: #e8d8f8;
+}
